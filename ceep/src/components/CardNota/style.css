@@ -1,0 +1,14 @@
+.class-nota{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px red;
+    flex-wrap: wrap;
+    padding: 16px;
+    margin-top: 1%;
+    font-size: 25px;
+    padding: 10px;
+    margin: 1%;
+}

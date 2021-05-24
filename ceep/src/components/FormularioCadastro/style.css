@@ -1,0 +1,12 @@
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;;
+}
+
+.form-cadastro-input{
+    height: 50px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 1%;
+}

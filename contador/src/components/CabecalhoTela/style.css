@@ -1,0 +1,10 @@
+header{
+    position: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #C63319;
+    text-align: center;
+    height: 10%;
+    font-size: 25px;
+}

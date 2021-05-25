@@ -1,0 +1,21 @@
+.corpoPagina{
+    position: flex; 
+    text-align: center;
+    padding: 15px;
+}
+.corpoPagina p{
+    font-size: 100px;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.corpoPagina button{
+    width: 15%;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 1%;
+}
+article{
+    padding: 10px;
+}

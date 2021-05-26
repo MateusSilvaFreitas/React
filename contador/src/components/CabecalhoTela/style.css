@@ -1,11 +1,11 @@
-header{
-    position: flex;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: #C63319;
-    text-align: center;
-    height: 10%;
-    font-size: 25px;
-    box-shadow: 1px 5px 5px red;
+header {
+  position: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #c63319;
+  text-align: center;
+  height: 10%;
+  font-size: 25px;
+  box-shadow: 1px 5px 5px red;
 }

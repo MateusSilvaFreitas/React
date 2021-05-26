@@ -15,6 +15,8 @@
     height: 50px;
     font-size: 25px;
     margin-top: 1%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #00F;
 }
 article{
     padding: 10px;

@@ -5,10 +5,15 @@
     justify-content: space-between;
     border-radius: 4px;
     box-shadow: 5px 5px 5px red;
-    flex-wrap: wrap;
+    word-wrap: break-word;
     padding: 16px;
     margin-top: 1%;
     font-size: 25px;
     padding: 10px;
     margin: 1%;
+    
+}
+.class-nota h1,p{
+    text-align: center;
+    padding: 1%;
 }

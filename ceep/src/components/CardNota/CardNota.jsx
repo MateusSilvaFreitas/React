@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./style.css";
 
 class CardNota extends Component {
@@ -6,9 +7,9 @@ class CardNota extends Component {
     return (
       <section className="class-nota">
         <header>
-          <h1>Titulo</h1>
+          <h1>{this.props.titulo}</h1>
         </header>
-        <p>Nota</p>
+        <p>{this.props.texto}</p>
       </section>
     );
   }

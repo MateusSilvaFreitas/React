@@ -3,7 +3,7 @@ class HelloMessage extends Component {
     render() { 
         return ( 
             <div>
-                Olá, {this.props.name}
+                Olá, corno!
             </div>
          );
     }

@@ -3,6 +3,7 @@ import api from "../../paginas/services/api";
 import TextField from "@material-ui/core/TextField";
 import "../../assets/style.css";
 import BotaoSubmit from "../BotaoSubmit";
+import MenuBar from "../MenuBar";
 
 class FormularioCadastroUsuario extends Component {
   constructor() {
@@ -33,12 +34,14 @@ class FormularioCadastroUsuario extends Component {
     e.stopPropagation();
     try {
       api.post(`user`, {
-        Nome: this.nome,
-        Email: this.email,
-        Senha: this.senha,
-        Telefone: this.telefone,
+        nome: this.nome,
+        email: this.email,
+        senha: this.senha,
+        telefone: this.telefone,
+      }).then(() =>{
+        alert("Registro inserido com sucesso!");
       });
-      alert("Registro inserido com sucesso!");
+      
     } catch (e) {
       alert(e);
     }
@@ -46,8 +49,12 @@ class FormularioCadastroUsuario extends Component {
   render() {
     return (
       <div>
+        <MenuBar />
         <h1>Cadastro de usuários</h1>
-        <form className="form_cadastro" onClick={this._handleSubmit.bind(this)}>
+        <form
+          className="form_cadastro"
+          onSubmit={this._handleSubmit.bind(this)}
+        >
           <TextField
             label="Nome do usuário"
             onChange={this._handleAlterouNome.bind(this)}
@@ -70,7 +77,7 @@ class FormularioCadastroUsuario extends Component {
             onChange={this._handleAlterouTelefone.bind(this)}
             required
           />
-          <BotaoSubmit />
+          <BotaoSubmit valor="cadastrar" />
         </form>
       </div>
     );

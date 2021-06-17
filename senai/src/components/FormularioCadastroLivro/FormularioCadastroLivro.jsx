@@ -3,6 +3,7 @@ import api from "../../paginas/services/api";
 import TextField from "@material-ui/core/TextField";
 import "../../assets/style.css";
 import BotaoSubmit from "../BotaoSubmit";
+import MenuBar from "../MenuBar";
 
 class FormularioCadastroLivro extends Component {
   constructor() {
@@ -39,13 +40,13 @@ class FormularioCadastroLivro extends Component {
 
     try {
       api.post(`book`, {
-        NomeAutor: this.nomeAutor,
-        CodigoEditora: this.codigoEditora,
-        ISBN: this.isbn,
-        QuantidadeEstoque: this.qntdEstoque,
-        Assunto: this.assunto,
+        nomeAutor: this.nomeAutor,
+        codigoEditora: this.codigoEditora,
+        isbn: this.isbn,
+        qntdEstoque: this.qntdEstoque,
+        assunto: this.assunto,
       });
-      alert("Registro inserido com sucesso!")
+      alert("Registro inserido com sucesso!");
     } catch (e) {
       alert(e);
     }
@@ -53,6 +54,7 @@ class FormularioCadastroLivro extends Component {
   render() {
     return (
       <div>
+        <MenuBar />
         <h1>Cadastro de Livros</h1>
 
         <form
@@ -84,7 +86,7 @@ class FormularioCadastroLivro extends Component {
             onChange={this._handleMudouAssunto.bind(this)}
             required
           />
-          <BotaoSubmit/>
+          <BotaoSubmit valor="Cadastrar" />
         </form>
       </div>
     );

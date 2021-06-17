@@ -5,7 +5,7 @@ class BotaoSubmit extends Component {
   render() {
     return (
       <div className="botao_submit">
-        <Button variant="contained" color="primary" type="submit">Cadastrar</Button>
+        <Button variant="contained" color="primary" type="submit">{this.props.valor}</Button>
       </div>
     );
   }

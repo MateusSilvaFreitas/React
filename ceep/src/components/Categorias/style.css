@@ -1,0 +1,19 @@
+.lista-categorias ul {
+    margin-top: 1%;
+}
+.lista-categorias li {
+    display: inline;
+    margin-left: 1%;
+    padding: 10px;
+    background-color: teal;
+    border-radius: 10px;
+}
+.lista-categorias{
+    padding: 1%;
+}
+.lista-categorias input{
+    height: 10px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 1%;
+}
